@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found | DrawMe Legal Center</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .not-found-container {
+      min-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem 1.5rem;
+    }
+    .not-found-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 3rem 2.5rem;
+      max-width: 520px;
+      box-shadow: var(--card-shadow);
+    }
+    .not-found-num {
+      font-family: var(--font-heading);
+      font-size: 5rem;
+      font-weight: 800;
+      line-height: 1;
+      background: linear-gradient(135deg, var(--brand-primary), var(--brand-accent-amber));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="not-found-container">
+    <div class="not-found-card">
+      <img src="assets/logo.svg" alt="DrawMe Logo" width="64" height="64" style="margin-bottom: 1.25rem;">
+      <div class="not-found-num">404</div>
+      <h1 style="font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 0.75rem;">Document Page Not Found</h1>
+      <p style="color: var(--text-secondary); margin-bottom: 2rem; font-size: 0.95rem;">
+        The requested policy document or link could not be located. You can navigate back to the official DrawMe Legal & Policy Center below.
+      </p>
+      <div style="display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap;">
+        <a href="index.html#privacy" class="btn-primary">View Privacy Policy</a>
+        <a href="index.html#terms" class="btn-outline">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

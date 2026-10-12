@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E8436A"/>
+      <stop offset="50%" stop-color="#FF6B8B"/>
+      <stop offset="100%" stop-color="#0E8F84"/>
+    </linearGradient>
+    <linearGradient id="pencilGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD166"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Background rounded squircle -->
+  <rect x="6" y="6" width="108" height="108" rx="28" fill="url(#bgGrad)" filter="url(#shadow)"/>
+
+  <!-- Inner canvas paper -->
+  <rect x="18" y="18" width="84" height="84" rx="20" fill="#FFFFFF" fill-opacity="0.95"/>
+
+  <!-- Color Splashes -->
+  <circle cx="38" cy="42" r="14" fill="#FF5964" fill-opacity="0.9"/>
+  <circle cx="68" cy="38" r="16" fill="#4CC9F0" fill-opacity="0.85"/>
+  <circle cx="50" cy="62" r="15" fill="#6BCB77" fill-opacity="0.9"/>
+  <circle cx="76" cy="66" r="13" fill="#FFD93D" fill-opacity="0.9"/>
+
+  <!-- Drawing Pencil / Stylus Overlay -->
+  <g transform="translate(48, 28) rotate(32)">
+    <rect x="0" y="8" width="14" height="42" rx="3" fill="url(#pencilGrad)"/>
+    <polygon points="0,50 14,50 7,64" fill="#241A1C"/>
+    <polygon points="4,58 10,58 7,64" fill="#E8436A"/>
+    <rect x="0" y="2" width="14" height="6" rx="2" fill="#E2E8F0"/>
+    <rect x="0" y="-3" width="14" height="5" rx="2" fill="#FF8FA3"/>
+  </g>
+</svg>
